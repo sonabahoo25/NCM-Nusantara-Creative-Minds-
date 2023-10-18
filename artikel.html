@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artikel</title>
+  <link rel="icon" href="img/logo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="" />
+      </a>
+    </div>
+    <div class="navbar">
+      <a href="jasa.html">JASA</a>
+      <a href="artikel.html">ARTIKEL</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          KARIR
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="kerjapenuhwaktu.html">Kerja Penuh Waktu</a>
+          <a href="newinternshipprogram.html">New Internship Program</a>
+        </div>
+      </div>
+      <a href="aboutUs.html">TENTANG KAMI</a>
+      <a href="kontak.html">KONTAK</a>
+    </div>
+  </nav>
+
+  <!-- ARTIKEL 1 CONTENT -->
+  <section class="w3-center">
+    <h2 style="font-size: 40px"><b>Artikel Populer</b></h2>
+    <div class="w3-content w-3 display-container">
+      <img alt="photo" class="mySlides" src="img/artikelp1.png" style="width: 100%" />
+      <img alt="photo" class="mySlides" src="img/artikelp2.png" style="width: 100%" />
+      <img alt="photo" class="mySlides" src="img/artikelp3.png" style="width: 100%" />
+      <h2 style="font-size: 25px"><b>Apa itu AMDAL? Pengertian, Sejarah, hingga Manfaatnya</b></h2>
+      <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+    </div>
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      function plusDivs(n) {
+        showDivs((slideIndex += n));
+      }
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+    </script>
+  </section>
+
+  <section class="w3-container">
+    <h2 style="font-size: 40px"><b>Artikel Terbaru</b></h2>
+    <div class="w3-row">
+      <div class="w3-card">
+        <a href="artikel1.html"><img src="img/artikelt1.png" alt="" /></a>
+        <div class="w3-content">
+          <p style="text-align: right">20 September 2023</p>
+          <h4>
+            <b>
+              Memahami Konsep 3R <br />
+              (Reduce, Reuse, Recycle)</b>
+          </h4>
+        </div>
+      </div>
+      <div class="w3-card">
+        <a href="artikel2.html"><img src="img/artikelt2.png" alt="" /></a>
+        <div class="w3-content">
+          <p style="text-align: right">5 September 2023</p>
+          <h4>
+            <b>
+              Sampah: Pengertian Sampah, Jenis, dan <br />
+              Dampaknya</b>
+          </h4>
+        </div>
+      </div>
+      <div class="w3-card">
+        <a href="artikel3.html"><img src="img/artikelt3.png" alt="" /></a>
+        <div class="w3-content">
+          <p style="text-align: right">29 Agustus 2023</p>
+          <h4>
+            <b>
+              Fenomena Sampah Plastik <br />
+              di Indonesia</b>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION-->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <img src="img/logo.png" alt="" />
+          <h4>Follow us on</h4>
+          <div class="social-media">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Jasa</a></li>
+            <li><a href="#">Artikel</a></li>
+            <li><a href="#">Karir</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Profile Website</h4>
+          <ul>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Visi Misi</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Sosial Media</h4>
+          <ul>
+            <li><a href="#">Email : ncmgroup2@gmail.com</a></li>
+            <li><a href="#">Instagram : @ncmgroup2_official</a></li>
+            <li><a href="#">Facebook : ncmgroup2_official</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="fixed-footer">
+    <div class="container">Presented By NCM Group</div>
+  </div>
+</body>
+
+</html>
